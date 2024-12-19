@@ -1,0 +1,376 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Blurred Left and Right Areas */
+.blurred-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 0;
+  filter: blur(10px);
+  pointer-events: none;
+}
+.blurred-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 0;
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+/* Header */
+header {
+  background-color: #3e2090;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 45px;
+  color: #f39c12;
+  text-shadow: 2px 2px 8px rgba(243, 156, 18, 0.8);
+  font-family: 'Courier New', Courier, monospace;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  margin-right: 150px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+/* Section Styling */
+.section {
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+/* Home Section */
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.home-left {
+  width: 50%;
+  
+}
+.dep_dis{
+  margin-top: 90px;
+}
+ .name{
+  color:blue;
+  
+}
+h2{
+  text-shadow: 2px 2px 4px rgba(255, 252, 252, 0.3);
+}
+.d_data{
+  word-spacing: 2px;
+
+}
+.home-left ul {
+  list-style: none;
+  padding: 0;
+}
+.home-left img {
+  width: 50px;
+  margin: 5px;
+}
+h4{
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(201, 190, 190, 0.3);
+}
+p{
+  margin-top: 70px;
+  text-indent: 20px;
+  text-align: left;
+  justify-content:center;
+  color: #d4caca; 
+  font-size: 16px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+i{
+  size: 60px;
+  margin-top: 40px;
+  width: 30px;
+  height: 240px;
+ 
+}
+.button-container{
+  margin-top:-70px;
+
+}
+
+.home-right {
+  width: 50%;
+  text-align: center;
+}
+.profile-pic {
+  display: flex;
+  margin-left: 70px;
+  justify-content: center; 
+  align-items: center; 
+  height: 250px; 
+  width: 250px; 
+  overflow: hidden; 
+  border-radius: 50%; 
+  border: 5px solid #2527b0; 
+}
+img{
+  height: 100%;
+  width: auto; 
+  object-fit: cover;
+}
+
+.more_about_me{
+
+    display: inline-block;
+    padding: 15px 30px; 
+    font-size: 18px; 
+    font-weight: bold; 
+    color: white; 
+    background-color: #007bff; 
+    border: 2px solid #007bff; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    transition: all 0.3s ease; 
+    cursor: pointer;
+}
+.more_about_me:hover {
+  background-color: #54ee32; 
+  color: #0f447d;
+  border-color: #007bff; 
+  transform: scale(1.05); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
+/* about section */
+
+  .about_me_p
+  {
+    margin: 20px; 
+    padding: 10px; 
+    border: 0px solid #666; 
+    width: 80%; 
+    max-width: 600px;
+    height: auto;
+  }
+  #about {
+    padding: 50px 20px;
+    text-align: center;
+    
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 20px 20px 40px 30px ;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+  
+  .about_right_part{
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    margin-top: 120px;
+  }
+  .about_right_part p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .about_left_part {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+  }
+  
+  
+
+
+/* Skills Section */
+
+.skill_section{
+  margin-top: 50px;
+}
+.skill-chart {
+  max-width: 550px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.skill {
+  margin: 10px 0;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.skill span {
+  display: block;
+  flex: 1;
+}
+.bar {
+  background-color: #444;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 3;
+  margin: 0 10px;
+}
+.level {
+  background-color: #4caf50;
+  height: 100%;
+}
+.percentage {
+  flex: 1;
+  text-align: right;
+}
+
+/* Contact Section */
+.contect_section{
+margin-top: 60px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+form input, form textarea, form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+form button {
+  background-color: #313831;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+form button:hover{
+  background-color: #4caf50;
+  border: none;
+  color: #ffffff;
+}
+
+/* Footer Section Styling */
+/* Footer Section Styling */
+footer {
+  background-color: #2c3e50; /* Dark background for footer */
+  padding: 40px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  margin-bottom: 20px;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-left h2, .footer-center h2, .footer-right h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #f39c12; /* Highlight color for headings */
+}
+
+.footer-left p, .footer-center p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ecf0f1;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.contact-item i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #f39c12; /* Icon color */
+}
+
+.footer-right .social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 30px;
+  color: #ecf0f1;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #f39c12;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #34495e;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #bdc3c7;
+}
+
+/* Ensure footer is distinct from main content */
+body {
+  background-color: #121212; /* Main background color */
+  color: #ffffff;
+}
+
+footer {
+  background-color: #2c3e50; /* Footer background */
+}
